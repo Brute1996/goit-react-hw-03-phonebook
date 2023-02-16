@@ -93,7 +93,7 @@ export class App extends Component {
           handleChange={this.handleChange}/>
         <h2 style={{ margin: 30 }}>Contacts</h2>
         <Filter handleChange={this.handleChange} filterValue={this.state.filter}/>
-        <ContactList contacts={this.filteredContacts()}
+        <ContactList contacts={this.filteredContacts}
           deleteContact={this.deleteContact} />
       </div>
     );
