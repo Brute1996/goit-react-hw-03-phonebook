@@ -5,7 +5,7 @@ import { ContactItem } from "components/ContactListItem/ContactListItem";
 export const ContactList = ({ contacts, deleteContact }) => {
     return (
         <ConactListWrapper>
-            {contacts().map(({ name, id, number }) => {
+            {contacts.map(({ name, id, number }) => {
                 return <ContactItem
                     key={id}
                     name={name}
